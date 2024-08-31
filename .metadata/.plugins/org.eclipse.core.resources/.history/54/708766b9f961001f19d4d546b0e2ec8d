@@ -1,0 +1,62 @@
+package codingTest;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
+//2024.08 Programmers codingTest 제곱수 판별하기
+/*
+ * 문제 설명
+ * 어떤 자연수를 제곱했을 때 나오는 정수를 제곱수라고 합니다. 
+ * 정수 n이 매개변수로 주어질 때, n이 제곱수라면 1을 아니라면 2를 return하도록 solution 함수를 완성해주세요.
+*/
+
+
+public class Programmers01 {
+	
+		public static void main(String[] args) throws IOException{
+			
+//			Scanner 활용
+//			Scanner sc = new Scanner(System.in);
+//			int n = sc.nextInt();	
+//			
+//			System.out.println(solution(n));
+
+//			BufferedReader 활용
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+			
+//			int input = br.read();  --> ?? 왜 49나옴?
+			
+//			String inputStr = br.readLine();
+			int num = Integer.parseInt(br.readLine());
+			br.close();
+			
+//			System.out.println("inputStr : "+ inputStr.getClass().getName());
+			System.out.println(((Object)num).getClass().getName());
+//			System.out.println(solution(num));
+			
+			//bw.write(num);
+			bw.flush(); //buffer에 있는 내용을 내보냄
+			bw.close();
+		
+		}
+			
+	    public static int solution(int n) {
+	    	    
+	        //Math.pow(double a,double b) : 제곱 함수
+	        //Math.sqrt(double a) : 루트(제곱근) 함수
+	        
+	        if(Math.sqrt(n)*Math.sqrt(n)==n) {
+	        	return 1;
+	        }
+	        
+	        return 2;
+	    }
+	}
+
+
+

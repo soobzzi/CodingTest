@@ -1,0 +1,15 @@
+package codingTest;
+
+
+//2024.08 Programmers codingTest 
+public class Programmers01 {
+	
+	    public int solution(int n) {
+	        int answer = 0;
+	        
+	        
+	        //math.pow(.2) == n
+	        return answer;
+	    }
+	}
+
