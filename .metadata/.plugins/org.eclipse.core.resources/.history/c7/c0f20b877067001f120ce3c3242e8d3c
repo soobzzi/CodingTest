@@ -1,0 +1,62 @@
+package codingTest;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Arrays;
+
+public class Programmers02 {
+
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String inputStr = br.readLine();
+		//int n = Integer.parseInt(br.readLine());
+		
+		//bw.write(solution(inputStr,n));
+		bw.write(Arrays.toString(solution01(inputStr)));
+		bw.flush();
+		bw.close();
+		
+
+	}
+	
+	    public static String solution(String my_string, int n) {
+	        
+	        String rslt = my_string.substring(0,n);
+	        
+	        return rslt;
+	    }
+	    
+	   
+	    public static String[] solution01(String myString) {
+	            
+           // String rep = myString.replace(" ","");
+            String[] rslt = myString.split("x");
+            Arrays.sort(rslt);
+            
+            String[] Array = new String[rslt.length];
+            int n = 0;
+            
+            if(!rslt.equals(" ")) {
+            for(int i = 0 ; i<rslt.length;i++) {
+            	Array[i] = rslt[n];
+            			n++;
+            	}
+            }else{
+            	
+            }
+            
+            
+            //System.out.println(Arrays.toString(rslt));
+            
+            return Array;
+        }
+	    //dxccxbbbxxaaaa
+	}
+
+
