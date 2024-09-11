@@ -1,0 +1,26 @@
+package boj;
+
+import java.util.Scanner;
+
+public class bojNo10926 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		
+		switch (a/10) {
+		
+			case 10 :
+			case 9 : System.out.println("A");
+			case 8 : System.out.println("B");
+			case 7 : System.out.println("C");
+		}
+			defalut : System.out.println("D");
+			
+		}
+        
+		
+	}
+
+}
