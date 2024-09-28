@@ -2,7 +2,7 @@ package boj;
 
 import java.util.Scanner;
 
-public class bojNo9498 {
+public class BojNo9498 {
 	
 	public static void main(String[] args) {
 		
